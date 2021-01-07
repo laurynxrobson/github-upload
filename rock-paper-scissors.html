@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+ <!-- Head tag -->
+<head>
+   <meta charset="utf-8">
+   <title>Rock Paper Scissors</title>
+   
+   <!-- CSS -->
+   <link rel="stylesheet" href="rock-paper-scissors.css">
+   <link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/7313304872.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <!-- Header -->
+   <header>
+      <h1>Rock Paper Scissors</h1>
+   </header>
+
+   <!-- Score board Div -->
+   <div class="score-board">
+      <div id="user-label" class="badge">User</div>
+      <div id="computer-label" class="badge">Comp</div>
+      <span id="user-score">0</span> <span>:</span> <span id="computer-score">0</span>
+   </div>
+
+   <!-- Results Div -->
+   <div class="result">
+      <p>You go first...</p>
+   </div>
+
+   <!-- Choices Div -->
+   <div class="choices">
+      <div id="rock" class="choice"><img src="https://img.icons8.com/color/48/000000/hand-rock.png"></div>
+      <div id="paper" class="choice"><img src="https://img.icons8.com/color/48/000000/hand-cursor.png"></div>
+      <div id="scissors" class="choice"><img src="https://img.icons8.com/color/48/000000/hand-scissors.png"></div>
+   </div>
+
+   <!-- Action Message Paragraph -->
+   <p id="action-message">Make you move.</p>
+   
+   <!-- Reset Button Div -->
+   <div class="reset-button">
+      <span id="reset">Reset</span>
+   </div>
+
+   <!-- Script is at the down of the body tag so that the html code has time to load before the JavaScript code. 
+   This also helps the web page to load faster and remember 'first come first serve' in this case the first elements in the html file are loaded before the last elements. 
+   And this is also because the you want for example the 'rock', 'paper' and 'scissors' icons to load before the event listener is executed.  -->
+   <!-- Script -->
+   <script src="rock-paper-scissors.js" async></script>
+</body>
+
+</html>
